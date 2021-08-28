@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,16 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/multiply/{first}/{second}', function($first,$second){
-    $mult = $first * $second;
-    return view('example', ['firstVal' => $first, 'secondVal' => $second , 'result' => $mult]);
-});
-
-Route::get('/form', function(){
-    return view('form');
-});
+Route::get('/form', [UserController::class,'create'])->name('register-form');
+Route::post('/form', [UserController::class,'store'])->name('form');
