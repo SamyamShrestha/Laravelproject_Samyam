@@ -11,31 +11,31 @@
         <div class="main-head">
             <h1>Submitted Form</h1>
         </div>
-        <div class="main-body">
+        <div class="form-body">
             <form method="post"  class="myform" action="">
                 @csrf
                 <div class="mb-3">
-                    <label class="form-label">UserName</label>
+                    <label class="label">UserName</label>
                     <input disabled class="form-control" type="text" name="full-name" value="{{$fullName}}">
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Address</label>
+                    <label class="label">Address</label>
                     <input disabled class="form-control" type="text" name="full-name" value="{{$address}}">
                 </div>
                 
                 <div class="mb-3">
-                    <label class="form-label">Password</label>
+                    <label class="label">Password</label>
                     <input disabled class="form-control" type="text" name="password"  value="{{$password}}">
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Verify Password</label>
+                    <label class="label">Verify Password</label>
                     <input disabled class="form-control" type="text" name="password"  value="{{$vpassword}}">
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Profile</label>
+                    <label class="label">Profile</label>
                     <img src="{{url("/storage/$path")}}">
                 </div>
             </form>

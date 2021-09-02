@@ -139,7 +139,7 @@ input[type=file]::file-selector-button:hover {
         <input type="password" name="cpassword" id="vpassword" class="enter"><br>
         <br>
         <label for="file">Profile:</label>
-        <input type="file" name="picfile" id="file-upload" class="inputfile"><br>
+        <input type="file" name="profilepic" id="file-upload" class="inputfile"><br>
         <br>
         <br>
         <div class="buttons">

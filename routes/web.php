@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/form', [UserController::class,'create'])->name('register-form');
 Route::post('/form', [UserController::class,'store'])->name('form');
+Route::get('/users', [UserController::class,'show'])->name('users-list');
