@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/form', [UserController::class,'create'])->name('register-form');
 Route::post('/form', [UserController::class,'store'])->name('form');
 Route::get('/users', [UserController::class,'show'])->name('users-list');
+
+Route::resource('registers', RegistersController::class);

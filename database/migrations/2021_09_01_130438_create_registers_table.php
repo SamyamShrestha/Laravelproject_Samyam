@@ -19,7 +19,7 @@ class CreateRegistersTable extends Migration
             $table->string('address')->unique();
             $table->string('password');
             $table->string('vpassword');
-            $table->string('picfile');
+            $table->string('profilepic');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateRegistersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('registers');
+        Schema::drop('registers');
     }
 }

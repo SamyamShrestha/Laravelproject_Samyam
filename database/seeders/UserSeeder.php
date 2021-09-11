@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             'address' => Str::random(7) . '@gmail.com',
             'password' => Hash::make(11),
             'vpassword'=> Hash::make(11),
-            'picfile' => 'storage/images/' .Str::random(4) . 'jpeg',
+            'profilepic' => 'storage/images/' .Str::random(4) . 'jpeg',
             'created_at' => '2021-09-02',
             'updated_at' => '2021-09-02'
         ]);
